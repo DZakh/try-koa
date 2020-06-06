@@ -1,9 +1,9 @@
-interface IConfig {
+type Config = {
   port: number;
-}
+};
 
-const config: IConfig = {
-  port: Number(process.env.PORT || 7654)
+const config: Config = {
+  port: Number(process.env.PORT || 7654),
 };
 
 export { config };
