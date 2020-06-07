@@ -1,4 +1,5 @@
 import Router from 'koa-router';
+
 const router = new Router();
 
 const healthcheckRoutes = router.get('/ping', async ctx => {
